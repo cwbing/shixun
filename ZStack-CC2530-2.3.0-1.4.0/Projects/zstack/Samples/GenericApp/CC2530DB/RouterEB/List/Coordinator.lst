@@ -1,6 +1,6 @@
 ###############################################################################
 #                                                                             #
-# IAR C/C++ Compiler V8.10.3.10338/W32 for 8051         11/May/2021  15:40:02 #
+# IAR C/C++ Compiler V8.10.3.10338/W32 for 8051         11/May/2021  15:57:13 #
 # Copyright 2004-2011 IAR Systems AB.                                         #
 #                                                                             #
 #    Core               =  plain                                              #
@@ -9,17 +9,18 @@
 #    Calling convention =  xdata reentrant                                    #
 #    Constant location  =  data_rom                                           #
 #    Dptr setup         =  1,16                                               #
-#    Source file        =  E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\Coor #
+#    Source file        =  C:\Texas Instruments\shixun\ZStack-CC2530-2.3.0-1. #
+#                          4.0\Projects\zstack\Samples\GenericApp\Source\Coor #
 #                          dinator.c                                          #
-#    Command line       =  -f E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1 #
-#                          .4.0\Projects\zstack\Samples\GenericApp\CC2530DB\. #
-#                          .\..\..\Tools\CC2530DB\f8wRouter.cfg (-DCPU32MHZ   #
-#                          -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRU #
-#                          E -DRTR_NWK -DBLINK_LEDS) -f                       #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\Tools\CC2530DB\f8wConfig.cfg (-DSECURE=0      #
+#    Command line       =  -f "C:\Texas Instruments\shixun\ZStack-CC2530-2.3. #
+#                          0-1.4.0\Projects\zstack\Samples\GenericApp\CC2530D #
+#                          B\..\..\..\Tools\CC2530DB\f8wRouter.cfg"           #
+#                          (-DCPU32MHZ -DROOT=__near_func                     #
+#                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE -DRTR_NWK         #
+#                          -DBLINK_LEDS) -f "C:\Texas                         #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\To #
+#                          ols\CC2530DB\f8wConfig.cfg" (-DSECURE=0            #
 #                          -DZG_SECURE_DYNAMIC=0 -DREFLECTOR                  #
 #                          -DDEFAULT_CHANLIST=0x00100000                      #
 #                          -DDEFAULT_CHANLIST=0x00000800                      #
@@ -41,97 +42,99 @@
 #                          -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE     #
 #                          -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100            #
 #                          -DRESPONSE_POLL_RATE=100) -DREJOIN_POLL_RATE=440   #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\Coor #
-#                          dinator.c -D ZTOOL_P1 -D MT_TASK -D MT_SYS_FUNC    #
+#                          "C:\Texas Instruments\shixun\ZStack-CC2530-2.3.0-1 #
+#                          .4.0\Projects\zstack\Samples\GenericApp\Source\Coo #
+#                          rdinator.c" -D ZTOOL_P1 -D MT_TASK -D MT_SYS_FUNC  #
 #                          -D MT_ZDO_FUNC -D LCD_SUPPORTED=DEBUG -lC          #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\Rout #
-#                          erEB\List\ -lA E:\桌面\新建文件夹\shixun\ZStack-CC #
-#                          2530-2.3.0-1.4.0\Projects\zstack\Samples\GenericAp #
-#                          p\CC2530DB\RouterEB\List\ --diag_suppress          #
-#                          Pe001,Pa010 -o E:\桌面\新建文件夹\shixun\ZStack-CC #
-#                          2530-2.3.0-1.4.0\Projects\zstack\Samples\GenericAp #
-#                          p\CC2530DB\RouterEB\Obj\ -e --debug --core=plain   #
-#                          --dptr=16,1 --data_model=large                     #
-#                          --code_model=banked --calling_convention=xdata_ree #
-#                          ntrant --place_constants=data_rom                  #
-#                          --nr_virtual_regs 16 -I E:\桌面\新建文件夹\shixun\ #
-#                          ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\ #
-#                          GenericApp\CC2530DB\ -I E:\桌面\新建文件夹\shixun\ #
-#                          ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\ #
-#                          GenericApp\CC2530DB\..\SOURCE\ -I                  #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\ZMAIN\TI2530DB\ -I E:\桌面\新建文件夹\shixun\ #
-#                          ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\ #
-#                          GenericApp\CC2530DB\..\..\..\..\..\COMPONENTS\MT\  #
-#                          -I E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1 #
-#                          .4.0\Projects\zstack\Samples\GenericApp\CC2530DB\. #
-#                          .\..\..\..\..\COMPONENTS\HAL\INCLUDE\ -I           #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\HAL\TARGET\CC2530EB\ -I      #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\OSAL\MCU\CCSOC\ -I           #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\OSAL\INCLUDE\ -I             #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\STACK\AF\ -I                 #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\STACK\NWK\ -I                #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\STACK\SEC\ -I                #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\STACK\SAPI\ -I               #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\STACK\SYS\ -I                #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\STACK\ZDO\ -I                #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\ZMAC\F8W\ -I                 #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\ZMAC\ -I                     #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\SERVICES\SADDR\ -I           #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\SERVICES\SDATA\ -I           #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\MAC\INCLUDE\ -I              #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\MAC\HIGH_LEVEL\ -I           #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\MAC\LOW_LEVEL\srf04\ -I      #
-#                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\..\. #
-#                          .\..\..\..\COMPONENTS\MAC\LOW_LEVEL\srf04\SINGLE_C #
-#                          HIP\ -Ohz --require_prototypes                     #
-#    List file          =  E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\Rout #
-#                          erEB\List\Coordinator.lst                          #
-#    Object file        =  E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4. #
-#                          0\Projects\zstack\Samples\GenericApp\CC2530DB\Rout #
-#                          erEB\Obj\Coordinator.r51                           #
+#                          "C:\Texas Instruments\shixun\ZStack-CC2530-2.3.0-1 #
+#                          .4.0\Projects\zstack\Samples\GenericApp\CC2530DB\R #
+#                          outerEB\List\" -lA "C:\Texas                       #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\RouterEB\Li #
+#                          st\" --diag_suppress Pe001,Pa010 -o "C:\Texas      #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\RouterEB\Ob #
+#                          j\" -e --debug --core=plain --dptr=16,1            #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I "C:\Texas Instruments\shixun\ZStack-CC2530-2.3. #
+#                          0-1.4.0\Projects\zstack\Samples\GenericApp\CC2530D #
+#                          B\" -I "C:\Texas Instruments\shixun\ZStack-CC2530- #
+#                          2.3.0-1.4.0\Projects\zstack\Samples\GenericApp\CC2 #
+#                          530DB\..\SOURCE\" -I "C:\Texas                     #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\ZM #
+#                          AIN\TI2530DB\" -I "C:\Texas                        #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\MT\" -I "C:\Texas                   #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\HAL\INCLUDE\" -I "C:\Texas          #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\HAL\TARGET\CC2530EB\" -I "C:\Texas  #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\OSAL\MCU\CCSOC\" -I "C:\Texas       #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\OSAL\INCLUDE\" -I "C:\Texas         #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\STACK\AF\" -I "C:\Texas             #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\STACK\NWK\" -I "C:\Texas            #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\STACK\SEC\" -I "C:\Texas            #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\STACK\SAPI\" -I "C:\Texas           #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\STACK\SYS\" -I "C:\Texas            #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\STACK\ZDO\" -I "C:\Texas            #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\ZMAC\F8W\" -I "C:\Texas             #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\ZMAC\" -I "C:\Texas                 #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\SERVICES\SADDR\" -I "C:\Texas       #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\SERVICES\SDATA\" -I "C:\Texas       #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\MAC\INCLUDE\" -I "C:\Texas          #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\MAC\HIGH_LEVEL\" -I "C:\Texas       #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\MAC\LOW_LEVEL\srf04\" -I "C:\Texas  #
+#                          Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Proje #
+#                          cts\zstack\Samples\GenericApp\CC2530DB\..\..\..\.. #
+#                          \..\COMPONENTS\MAC\LOW_LEVEL\srf04\SINGLE_CHIP\"   #
+#                          -Ohz --require_prototypes                          #
+#    List file          =  C:\Texas Instruments\shixun\ZStack-CC2530-2.3.0-1. #
+#                          4.0\Projects\zstack\Samples\GenericApp\CC2530DB\Ro #
+#                          uterEB\List\Coordinator.lst                        #
+#    Object file        =  C:\Texas Instruments\shixun\ZStack-CC2530-2.3.0-1. #
+#                          4.0\Projects\zstack\Samples\GenericApp\CC2530DB\Ro #
+#                          uterEB\Obj\Coordinator.r51                         #
 #                                                                             #
 #                                                                             #
 ###############################################################################
 
-E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\GenericApp\CC2530DB\Coordinator.c
+C:\Texas Instruments\shixun\ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\GenericApp\Source\Coordinator.c
       1          #include  "OSAL.h"
       2          #include  "AF.h"
       3          #include  "ZDAPP.h"

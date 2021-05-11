@@ -6370,17 +6370,16 @@
   <group>
     <name>App</name>
     <file>
-      <name>$PROJ_DIR$\Coordinator.c</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Coordinator.h</name>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Enddevice.c</name>
+      <name>$PROJ_DIR$\..\Source\Coordinator.c</name>
       <excluded>
-        <configuration>CoordinatorEB</configuration>
         <configuration>RouterEB</configuration>
       </excluded>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Source\Coordinator.h</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Source\Enddevice.c</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\Source\OSAL_GenericApp.c</name>
@@ -6674,7 +6673,7 @@
       <name>$PROJ_DIR$\..\..\..\..\..\Components\mt\MT_UART.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\COMPONENTS\mt\MT_UART.h</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\mt\MT_UART.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\Components\mt\MT_UTIL.c</name>
@@ -6692,13 +6691,13 @@
       <name>$PROJ_DIR$\..\..\..\..\..\Components\mt\MT_ZDO.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\COMPONENTS\mt\MT_ZDO.h</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\mt\MT_ZDO.h</name>
     </file>
   </group>
   <group>
     <name>NWK</name>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\COMPONENTS\stack\nwk\AddrMgr.h</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\nwk\AddrMgr.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\COMPONENTS\stack\nwk\APS.h</name>
@@ -6743,13 +6742,13 @@
       <name>$PROJ_DIR$\..\..\..\..\..\COMPONENTS\stack\nwk\reflecttrack.h</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\COMPONENTS\stack\nwk\rtg.h</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\nwk\rtg.h</name>
     </file>
     <file>
       <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\sys\ZGlobals.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\COMPONENTS\stack\sys\ZGlobals.h</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\sys\ZGlobals.h</name>
     </file>
   </group>
   <group>
@@ -6899,7 +6898,7 @@
       <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\zdo\ZDSecMgr.c</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\..\..\..\..\Components\stack\zdo\ZDSecMgr.h</name>
+      <name>$PROJ_DIR$\..\..\..\..\..\COMPONENTS\stack\zdo\ZDSecMgr.h</name>
     </file>
   </group>
   <group>
