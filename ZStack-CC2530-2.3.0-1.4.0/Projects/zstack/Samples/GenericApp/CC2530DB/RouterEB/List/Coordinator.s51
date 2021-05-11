@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                            /
-// IAR C/C++ Compiler V8.10.3.10338/W32 for 8051        11/May/2021  15:22:12 /
+// IAR C/C++ Compiler V8.10.3.10338/W32 for 8051        11/May/2021  15:40:02 /
 // Copyright 2004-2011 IAR Systems AB.                                        /
 //                                                                            /
 //    Core               =  plain                                             /
@@ -9,15 +9,15 @@
 //    Calling convention =  xdata reentrant                                   /
 //    Constant location  =  data_rom                                          /
 //    Dptr setup         =  1,16                                              /
-//    Source file        =  G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//    Source file        =  E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\Co /
 //                          ordinator.c                                       /
-//    Command line       =  -f G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0- /
+//    Command line       =  -f E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0- /
 //                          1.4.0\Projects\zstack\Samples\GenericApp\CC2530DB /
 //                          \..\..\..\Tools\CC2530DB\f8wRouter.cfg            /
 //                          (-DCPU32MHZ -DROOT=__near_func                    /
 //                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE -DRTR_NWK        /
-//                          -DBLINK_LEDS) -f G:\作业\新建文件夹\shixun\ZStack /
+//                          -DBLINK_LEDS) -f E:\桌面\新建文件夹\shixun\ZStack /
 //                          -CC2530-2.3.0-1.4.0\Projects\zstack\Samples\Gener /
 //                          icApp\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig. /
 //                          cfg (-DSECURE=0 -DZG_SECURE_DYNAMIC=0             /
@@ -41,89 +41,89 @@
 //                          "-DCONST=const __code" -DGENERIC=__generic        /
 //                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000       /
 //                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)  /
-//                          -DREJOIN_POLL_RATE=440 G:\作业\新建文件夹\shixun\ /
+//                          -DREJOIN_POLL_RATE=440 E:\桌面\新建文件夹\shixun\ /
 //                          ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Samples /
 //                          \GenericApp\CC2530DB\Coordinator.c -D ZTOOL_P1    /
 //                          -D MT_TASK -D MT_SYS_FUNC -D MT_ZDO_FUNC -D       /
 //                          LCD_SUPPORTED=DEBUG -lC                           /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\Ro /
-//                          uterEB\List\ -lA G:\作业\新建文件夹\shixun\ZStack /
+//                          uterEB\List\ -lA E:\桌面\新建文件夹\shixun\ZStack /
 //                          -CC2530-2.3.0-1.4.0\Projects\zstack\Samples\Gener /
 //                          icApp\CC2530DB\RouterEB\List\ --diag_suppress     /
-//                          Pe001,Pa010 -o G:\作业\新建文件夹\shixun\ZStack-C /
+//                          Pe001,Pa010 -o E:\桌面\新建文件夹\shixun\ZStack-C /
 //                          C2530-2.3.0-1.4.0\Projects\zstack\Samples\Generic /
 //                          App\CC2530DB\RouterEB\Obj\ -e --debug             /
 //                          --core=plain --dptr=16,1 --data_model=large       /
 //                          --code_model=banked --calling_convention=xdata_re /
 //                          entrant --place_constants=data_rom                /
 //                          --nr_virtual_regs 16 -I                           /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\   /
-//                          -I G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0- /
+//                          -I E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0- /
 //                          1.4.0\Projects\zstack\Samples\GenericApp\CC2530DB /
-//                          \..\SOURCE\ -I G:\作业\新建文件夹\shixun\ZStack-C /
+//                          \..\SOURCE\ -I E:\桌面\新建文件夹\shixun\ZStack-C /
 //                          C2530-2.3.0-1.4.0\Projects\zstack\Samples\Generic /
 //                          App\CC2530DB\..\..\..\ZMAIN\TI2530DB\ -I          /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\MT\ -I                    /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\HAL\INCLUDE\ -I           /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\HAL\TARGET\CC2530EB\ -I   /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\OSAL\MCU\CCSOC\ -I        /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\OSAL\INCLUDE\ -I          /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\STACK\AF\ -I              /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\STACK\NWK\ -I             /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\STACK\SEC\ -I             /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\STACK\SAPI\ -I            /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\STACK\SYS\ -I             /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\STACK\ZDO\ -I             /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\ZMAC\F8W\ -I              /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\ZMAC\ -I                  /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\SERVICES\SADDR\ -I        /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\SERVICES\SDATA\ -I        /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\MAC\INCLUDE\ -I           /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\MAC\HIGH_LEVEL\ -I        /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\MAC\LOW_LEVEL\srf04\ -I   /
-//                          G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//                          E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\.. /
 //                          \..\..\..\..\COMPONENTS\MAC\LOW_LEVEL\srf04\SINGL /
 //                          E_CHIP\ -Ohz --require_prototypes                 /
-//    List file          =  G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
+//    List file          =  E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4 /
 //                          .0\Projects\zstack\Samples\GenericApp\CC2530DB\Ro /
 //                          uterEB\List\Coordinator.s51                       /
 //                                                                            /
@@ -350,7 +350,7 @@ GenericApp_ProcessEvent SYMBOL "GenericApp_ProcessEvent"
         EXTERN ??osal_msg_receive?relay
         FUNCTION ??osal_msg_receive?relay,00H
 
-// G:\作业\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\GenericApp\CC2530DB\Coordinator.c
+// E:\桌面\新建文件夹\shixun\ZStack-CC2530-2.3.0-1.4.0\Projects\zstack\Samples\GenericApp\CC2530DB\Coordinator.c
 //    1 #include  "OSAL.h"
 //    2 #include  "AF.h"
 //    3 #include  "ZDAPP.h"
@@ -689,14 +689,21 @@ GenericApp_ProcessEvent:
 //  114 }
 //  115 
 //  116 
+//  117 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//  118 * 函数名：GenericApp_MessageMSGCB
+//  119 * 作者 ： Mayecho
+//  120 * 参数： afIncomingMSGPacket_t *pkt
+//  121 * 返回： void
+//  122 * 描述：函数说明
+//  123 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
         RSEG BANKED_CODE:CODE:NOROOT(0)
-//  117 void GenericApp_MessageMSGCB( afIncomingMSGPacket_t *pkt)
+//  124 void GenericApp_MessageMSGCB( afIncomingMSGPacket_t *pkt)
 GenericApp_MessageMSGCB:
         CFI Block cfiBlock2 Using cfiCommon0
         CFI Function GenericApp_MessageMSGCB
         CODE
-//  118 {
+//  125 {
         FUNCALL GenericApp_MessageMSGCB, osal_memcpy
         LOCFRAME ISTACK, 0, STACK
         LOCFRAME PSTACK, 0, STACK
@@ -750,7 +757,7 @@ GenericApp_MessageMSGCB:
         MOV     A,#-0x4
         LCALL   ?ALLOC_XSTACK8
         CFI CFA_XSP16 add(XSP16, 15)
-//  119   unsigned char buffer[4]=" ";
+//  126   unsigned char buffer[4]=" ";
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
         MOV     R4,DPL
@@ -759,7 +766,7 @@ GenericApp_MessageMSGCB:
         MOV     DPL,#`?<Constant " ">` & 0xff
         MOV     A,#0x4
         LCALL   ?MOVE_LONG8_XDATA_XDATA
-//  120   switch ( pkt->clusterId )
+//  127   switch ( pkt->clusterId )
         MOV     DPL,R2
         MOV     DPH,R3
         INC     DPTR
@@ -773,9 +780,9 @@ GenericApp_MessageMSGCB:
         MOVX    A,@DPTR
 ??GenericApp_MessageMSGCB_0:
         JNZ     ??GenericApp_MessageMSGCB_1
-//  121 {
-//  122     case GENERICAPP_CLUSTERID:
-//  123       osal_memcpy(buffer,pkt->cmd.Data,3);
+//  128 {
+//  129     case GENERICAPP_CLUSTERID:
+//  130       osal_memcpy(buffer,pkt->cmd.Data,3);
         ; Setup parameters for call to function osal_memcpy
         MOV     A,R2
         ADD     A,#0x21
@@ -802,7 +809,7 @@ GenericApp_MessageMSGCB:
         MOV     A,#0x3
         LCALL   ?DEALLOC_XSTACK8
         CFI CFA_XSP16 add(XSP16, 15)
-//  124       if((buffer[0]=='L')||(buffer[1]=='E')||(buffer[2]=='D'))
+//  131       if((buffer[0]=='L')||(buffer[1]=='E')||(buffer[2]=='D'))
         MOV     DPL,?XSP + 0
         MOV     DPH,?XSP + 1
         MOVX    A,@DPTR
@@ -818,8 +825,8 @@ GenericApp_MessageMSGCB:
         MOVX    A,@DPTR
         XRL     A,#0x44
         JNZ     ??GenericApp_MessageMSGCB_3
-//  125       {
-//  126         HalLedBlink(HAL_LED_2,0,50,500);
+//  132       {
+//  133         HalLedBlink(HAL_LED_2,0,50,500);
 ??GenericApp_MessageMSGCB_2:
         ; Setup parameters for call to function HalLedBlink
         MOV     R4,#-0xc
@@ -829,20 +836,20 @@ GenericApp_MessageMSGCB:
         MOV     R1,#0x2
         LCALL   ??HalLedBlink?relay
         SJMP    ??GenericApp_MessageMSGCB_1
-//  127       }
-//  128       else
-//  129       {
-//  130         HalLedSet(HAL_LED_2,HAL_LED_MODE_ON);
+//  134       }
+//  135       else
+//  136       {
+//  137         HalLedSet(HAL_LED_2,HAL_LED_MODE_ON);
 ??GenericApp_MessageMSGCB_3:
         ; Setup parameters for call to function HalLedSet
         MOV     R2,#0x1
         MOV     R1,#0x2
         LCALL   ??HalLedSet?relay
-//  131       }
-//  132     break;
-//  133 
-//  134   }
-//  135 }
+//  138       }
+//  139     break;
+//  140 
+//  141   }
+//  142 }
 ??GenericApp_MessageMSGCB_1:
         MOV     A,#0x4
         LCALL   ?DEALLOC_XSTACK8

@@ -93,7 +93,61 @@ void GenericApp_Init( byte task_id )
 * 函数名  ：GenericApp_ProcessEvent
 * 参数    ：byte task_id,UNIT16 evens
 * 返回    ：UINT16
-* 作者    ：zkb
+* 作者    ：Chenli
 * 时间    ：2021/5/11
 * 描述    ：函数说明
 ----------------------------------------------------------------*/
+UINT16 GenericApp_ProcessEvent( byte task_id, UINT16 events )
+{
+  afIncomingMSGPacket_t *MSGpkt;
+  if ( events &SYS_EVENT_MSG )      //检索收到的命令，没有收到返回NULL
+  {
+     MSGpkt = (afIncomingMSGPacket_t *)osal_msg_receive
+       (GenericApp_TaskID);
+     while ( MSGpkt )  //如果不为空时，判断消息的类型
+     {
+        switch ( MSGpkt->hdr.event )
+        {
+        case ZDO_STATE_CHANGE://加入网络后触发ZDO_STATE_CHANGE事件
+          GenericApp_NwkState = (devStates_t)(MSGpkt->hdr.
+          status);//获得当前的状态
+          if (GenericApp_NwkState ==DEV_END_DEVICE) //若是终端节点加入网络
+          {
+            GenericApp_SendTheMessage() ;
+          }
+          break;
+        default:
+          break;
+        }
+        osal_msg_deallocate( (uint8 *)MSGpkt );//释放内存
+        MSGpkt = (afIncomingMSGPacket_t*)osal_msg_receive(GenericApp_TaskID );
+}
+        return (events ^ SYS_EVENT_MSG);// 返回未处理的事件 
+  }
+         return 0;
+     }
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+* 函数名  ：GenericApp_SendTheMessage
+* 参数    ：void
+* 返回    ：void
+* 作者    ：Chenli
+* 时间    ：2021/5/11
+* 描述    ：函数说明
+----------------------------------------------------------------*/
+void  GenericApp_SendTheMessage(void)
+{
+  unsigned char theMessageData[4] = "LED";//存放要发送的数据
+          afAddrType_t my_DstAddr;
+          my_DstAddr.addrMode = (afAddrMode_t)Addr16Bit;
+          my_DstAddr.endPoint = GENERICAPP_ENDPOINT;//初始化端口号
+          my_DstAddr.addr.shortAddr = 0x0000;//直接指定协调器的网络地址
+          AF_DataRequest( &my_DstAddr,&GenericApp_epDesc,//调用数据发送函数AF_DataRequst进行无线数据的发送
+                         GENERICAPP_CLUSTERID,
+                          3,
+                          theMessageData,
+                          &GenericApp_TransID,//发送 ID
+                          AF_DISCV_ROUTE, 
+                          AF_DEFAULT_RADIUS);
+}
