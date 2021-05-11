@@ -114,6 +114,13 @@ UINT16 GenericApp_ProcessEvent( byte task_id, UINT16 events )
 }
 
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* 函数名：GenericApp_MessageMSGCB
+* 作者 ： Mayecho
+* 参数： afIncomingMSGPacket_t *pkt
+* 返回： void
+* 描述：函数说明
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 void GenericApp_MessageMSGCB( afIncomingMSGPacket_t *pkt)
 {
   unsigned char buffer[4]=" ";
