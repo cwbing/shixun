@@ -110,4 +110,21 @@ UINT16 GenericApp_ProcessEvent( byte task_id, UINT16 events )
     }
         return 0;
 }
-
+void GenericApp_MessageMSGCB( afIncomingMSGPacket_t *pkt )//返回未处理的事件
+{
+    unsigned char buffer[4]= "   ";//无符号字符型
+    switch ( pkt->clusterId )
+    {
+        case GENERICAPP_CLUSTERID://判断信号
+            osal_memcpy(buffer,pkt->cmd.Data,3);//将数据拷贝到buffer中
+            if((buffer[0] == 'L') | (buffer[1] == 'E') | (buffer[2] == 'D'))//判断接收数据
+            {
+                HalLedBlink(HAL_LED_2,0,50,500);//LED2闪烁
+            }
+            else
+            {
+                HalLedSet(HAL_LED_2,HAL_LED_MODE_ON);//LED2点亮
+            }
+     break;
+    }       
+}

@@ -28,4 +28,3 @@ extern void GenericApp_Init ( byte task_id );
 extern UINT16 GenericApp_ProcessEvent ( byte task_id,UINT16 events );
 
 #endif // _COORDINATOR_H   
-
